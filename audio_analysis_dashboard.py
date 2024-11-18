@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import torch
-import librosa
+#import librosa
 import gdown
 from PIL import Image
 from transformers import Wav2Vec2Processor, Wav2Vec2ForSequenceClassification
@@ -124,7 +124,7 @@ def main():
 
     # Charger le modèle et le processeur pour les prédictions
     #model_path = "./model_and_processor"  # Remplacez par le chemin de votre modèle
-    processor_path  = "./model_and_processor"    
+    processor_path  = "./models_and_processor"    
     inverse_label_map = {0: 'neutral', 1: 'positif', 2: 'positif', 3: 'negatif', 4: 'negatif', 5: 'negatif'}  # Remplacez par votre map
     #inverse_label_map_audio = {'neutral': 0, 'calm': 'positif', 'happy': 'positif', 'sad': "negatif", 'angry': "negatif", 'fear': "negatif"}  # Remplacez par votre map
 
